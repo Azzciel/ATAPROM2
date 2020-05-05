@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<?php include 'vars.php';?>
+	<link rel="shortcut icon" href="img/logo.jpg"/>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+ 	
+	<meta charset="UTF-8">
+	<title>ATAPROM</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand col-md-3" href="index.php">Inicio</a>
+		<a class="navbar-brand col-md-3" href="contacto.php">Contacto</a>
+
+
+
+	</nav>
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav> -->
+	<form action="contacto.php" class="col-md-2" method="POST">
+		<div class="form-group">
+			<label for="nombre">Nombre</label>
+			<input name="nombre" class="form-control" type="text" placeholder="Nombre">
+			<small id="emailHelp" class="form-text text-muted">No compartiremos tu email con nadie.</small>
+		</div>
+		<div class="form-group">
+			<label for="apellido">Apellido</label>
+			<input name="apellido" class="form-control" type="text" placeholder="Apellido">
+		</div>	
+		<div class="form-group">
+			<input class="btn btn-primary" type="submit" value="Enviar">
+		</div>
+	
+	</form>
+		<footer>
+			<p>	Direccion: <?php echo $direccion; ?></p>
+			<p>	Telefono: <?php echo $telefono; ?></p>
+		</footer>
+</body>
+</html>
